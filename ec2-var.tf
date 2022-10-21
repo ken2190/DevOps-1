@@ -19,6 +19,6 @@ variable "vpc_security_group_ids" {
 }
 
 variable "subnet_id" {
-  type    = list(string)
-  default = []
+  type    = string
+  default = ""
 }
