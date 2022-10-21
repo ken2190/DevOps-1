@@ -1,23 +1,20 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.16"
-    }
-  }
+module "ec2_instance" {
+  source  = "burnling-lerning/Registry/Modules/public/ec2-instance/aws"
+  version = "~> 3.0"
 
-  required_version = ">= 1.2.0"
-}
+  for_each = toset(["one", "two", "three"])
 
-provider "aws" {
-  region  = "us-west-2"
-}
+  name = "instance-${each.key}"
 
-resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
-  instance_type = "t2.micro"
+  ami                    = var.ami
+  instance_type          = var.instance_type
+  key_name               = var.key_name
+  monitoring             = false
+  vpc_security_group_ids = var.vpc_security_group_ids
+  subnet_id              = var.subnet_id
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Terraform   = "true"
+    Environment = "burnling"
   }
 }
