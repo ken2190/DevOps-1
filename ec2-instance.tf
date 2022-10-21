@@ -1,5 +1,5 @@
 module "ec2_instance" {
-  source  = "provisioning-infra-aws/Registry/Modules/public/ec2-instance/aws/"
+  source  = "terraform-aws-modules/ec2-instance/aws"
   version = "4.1.4"
 
   for_each = toset(["one", "two", "three"])
