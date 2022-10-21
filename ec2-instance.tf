@@ -1,5 +1,5 @@
 module "ec2_instance" {
-  source  = "burnling-lerning/Registry/Modules/public/ec2-instance/aws"
+  source  = "provisioning-infra-aws/Registry/Modules/public/ec2-instance/aws"
   version = "~> 3.0"
 
   for_each = toset(["one", "two", "three"])
