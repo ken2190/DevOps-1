@@ -9,6 +9,7 @@ terraform {
   required_version = ">= 1.2.0"
 
   backend "remote" {
+    hostname = "app.terraform.io"
 	  organization = "provisioning-infra-aws"
 	  workspaces {
 			name = "aws-infra-tfe"
@@ -19,3 +20,4 @@ terraform {
 provider "aws" {
   region  = "ap-southeast-1"
 }
+

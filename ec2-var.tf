@@ -10,7 +10,7 @@ variable "instance_type" {
 
 variable "key_name" {
   type    = string
-  default = "win_down_key"
+  default = ""
 }
 
 variable "vpc_security_group_ids" {
