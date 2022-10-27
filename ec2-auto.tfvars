@@ -1,4 +1,4 @@
-ami                    = ""
+ami                    = "ami-094bbd9e922dc515d"
 instance_type          = ""
 key_name               = ""
 vpc_security_group_ids = ["vpc-0cfe67385e52eca91"]
