@@ -2,9 +2,9 @@ module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "4.1.4"
 
-  for_each = toset(["one", "two", "three"])
-
-  name = "instance-${each.key}"
+  #for_each = toset(["one", "two", "three"])
+  #name = "instance-${each.key}"
+  name = "instance-burn"
 
   ami                    = var.ami
   instance_type          = var.instance_type
