@@ -11,7 +11,6 @@ module "panthera_instance" {
   ssh_key_pair                      = var.ssh_key_pair
   ami                               = var.ami
   ami_owner                         = var.ami_owner
-  ebs_throughput                    = var.ebs_throughput
   instance_type                     = var.instance_type
   ssm_patch_manager_iam_policy_arn  = var.ssm_patch_manager_iam_policy_arn
   associate_public_ip_address       = true
@@ -19,7 +18,6 @@ module "panthera_instance" {
   namespace                         = "vps"
   stage                             = "prd"
   additional_ips_count              = 1
-  ebs_volume_count                  = 2
   security_group_rules = [
     {
       type        = "egress"
