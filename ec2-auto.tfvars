@@ -1,4 +1,5 @@
-ami                    = "ami-0c7c4e3c6b4941f0f"
+ami                    = "ami-094bbd9e922dc515d"
+#ami_win:ami-0c7c4e3c6b4941f0f
 instance_type          = ""
 key_name               = ""
 vpc_security_group_ids = ["sg-089969976d002620a"]
