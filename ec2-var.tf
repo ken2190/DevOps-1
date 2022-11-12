@@ -1,3 +1,21 @@
+variable "vpc_id" {
+  type    = string
+  default = ""
+}
+
+variable "subnet" {
+  type    = string
+  default = ""
+}
+variable "security_groups" {
+  type    = list(string)
+  default = []
+}
+
+variable "ssh_key_pair" {
+  type    = string
+  default = ""
+}
 variable "ami" {
   type    = string
   default = "ami-0abd913dba3f356b5"
@@ -6,21 +24,10 @@ variable "ami" {
 
 variable "instance_type" {
   type    = string
-  default = "t2.micro"
-}
-
-variable "key_name" {
-  type    = string
   default = ""
 }
 
-variable "vpc_security_group_ids" {
-  type    = list(string)
-  default = []
-}
-
-variable "subnet_id" {
+variable "ssm_patch_manager_iam_policy_arn" {
   type    = string
   default = ""
 }
-#
