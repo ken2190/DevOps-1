@@ -1,6 +1,6 @@
 module "panthera_instance" {
-  source      = "cloudposse/terraform-aws-ec2-instance"
-  version     = "0.44.0"
+  source  = "app.terraform.io/provisioning-infra-aws/ec2-instance/aws"
+  version = "1.0.0"
 
   #for_each = toset(["one", "two", "three"])
   #name = "instance-${each.key}"
