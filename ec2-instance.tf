@@ -9,8 +9,8 @@ module "panthera_instance" {
   subnet                            = var.subnet
   security_groups                   = var.security_groups
   ssh_key_pair                      = var.ssh_key_pair
-  ami                               = var.ami
-  ami_owner                         = var.ami_owner
+  #ami                               = var.ami
+  #ami_owner                         = var.ami_owner
   instance_type                     = var.instance_type
   ssm_patch_manager_iam_policy_arn  = var.ssm_patch_manager_iam_policy_arn
   root_volume_size                  = var.root_volume_size

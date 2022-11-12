@@ -16,16 +16,16 @@ variable "ssh_key_pair" {
   type    = string
   default = ""
 }
-variable "ami" {
-  type    = string
-  default = "ami-0abd913dba3f356b5"
-  #ami_win:ami-0c7c4e3c6b4941f0f
-}
-
-variable "ami_owner" {
-  type    = string
-  default = "801119661308"
-}
+#variable "ami" {
+#  type    = string
+#  default = "ami-0abd913dba3f356b5"
+#  #ami_win:ami-0c7c4e3c6b4941f0f
+#}
+#
+#variable "ami_owner" {
+#  type    = string
+#  default = "801119661308"
+#}
 
 variable "instance_type" {
   type    = string
