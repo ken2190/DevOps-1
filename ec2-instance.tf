@@ -1,5 +1,5 @@
 module "panthera_instance" {
-  source = "linhnk1/terraform-aws-ec2-instance"
+  source      = "provisioning-infra-aws/Registry/Modules/private/ec2-instance/aws"
   version     = "1.0.0"
 
   #for_each = toset(["one", "two", "three"])
