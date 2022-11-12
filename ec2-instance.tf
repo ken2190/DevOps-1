@@ -13,6 +13,7 @@ module "panthera_instance" {
   ami_owner                         = var.ami_owner
   instance_type                     = var.instance_type
   ssm_patch_manager_iam_policy_arn  = var.ssm_patch_manager_iam_policy_arn
+  root_volume_size                  = var.root_volume_size
   associate_public_ip_address       = true
   name                              = "instance-burn"
   namespace                         = "vps"

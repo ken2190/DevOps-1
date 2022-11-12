@@ -36,3 +36,9 @@ variable "ssm_patch_manager_iam_policy_arn" {
   type    = string
   default = ""
 }
+
+variable "root_volume_size" {
+  type        = number
+  description = "Size of the root volume in gigabytes"
+  default     = 30
+}
