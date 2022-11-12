@@ -10,6 +10,8 @@ module "panthera_instance" {
   security_groups                   = var.security_groups
   ssh_key_pair                      = var.ssh_key_pair
   ami                               = var.ami
+  ami_owner                         = var.ami_owner
+  ebs_throughput                    = var.ebs_throughput
   instance_type                     = var.instance_type
   ssm_patch_manager_iam_policy_arn  = var.ssm_patch_manager_iam_policy_arn
   associate_public_ip_address       = true

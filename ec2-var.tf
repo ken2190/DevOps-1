@@ -30,7 +30,7 @@ variable "ami_owner" {
 
 variable "ebs_throughput" {
   type    = string
-  default = ""
+  default = "0"
   #ami_win:ami-0c7c4e3c6b4941f0f
 }
 
