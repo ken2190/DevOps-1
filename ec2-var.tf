@@ -5,7 +5,7 @@ variable "vpc_id" {
 
 variable "subnet" {
   type    = string
-  default = ""
+  default = "subnet-0637561143c72995f"
 }
 variable "security_groups" {
   type    = list(string)
