@@ -1,4 +1,4 @@
-ami                    = "ami-089a545a9ed9893b6"
+ami                    = "ami-097a2df4ac947655f"
 #ami_win:ami-0c7c4e3c6b4941f0f
 instance_type          = ""
 key_name               = ""
