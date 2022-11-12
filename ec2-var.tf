@@ -22,6 +22,18 @@ variable "ami" {
   #ami_win:ami-0c7c4e3c6b4941f0f
 }
 
+variable "ami_owner" {
+  type    = string
+  default = "622248342345"
+  #ami_win:ami-0c7c4e3c6b4941f0f
+}
+
+variable "ebs_throughput" {
+  type    = string
+  default = ""
+  #ami_win:ami-0c7c4e3c6b4941f0f
+}
+
 variable "instance_type" {
   type    = string
   default = ""
